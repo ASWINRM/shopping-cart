@@ -1,5 +1,5 @@
 {
-  "homepage": "http://ASWINRM.github.io/shoppingcart",
+ 
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -21,8 +21,7 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    
     "server": "nodemon server.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
