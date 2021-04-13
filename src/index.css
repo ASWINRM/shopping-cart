@@ -1,0 +1,322 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html{
+  font-size: 62.5;
+  box-sizing: border-box;
+}
+
+body,
+#root{
+height:100vh;
+margin:0;
+}
+
+body,input,textarea,select,.primary-button,.button,.pro-button{
+  font-size: 1.6rem;
+  font-family: Montserrat,Arial, Helvetica, sans-serif;
+}
+
+.grid-container{
+  display:grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: 2.5em 1fr 2.5em;
+  grid-template-columns: 1fr;
+  height: 100%;
+}
+
+header{
+  grid-area: header;
+  background-color: #203040;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+main{
+  grid-area: main;
+}
+
+.content{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.main{
+  flex:3 60rem;
+}
+.sidebar{
+  flex:1 20rem;
+}
+header a {
+  color: #ffffff;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #ff8000;
+}
+footer{
+  grid-area: footer;
+  background-color: #203040;
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Products{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.Products li{
+  display: flex;
+ flex:0 1 29rem;
+ height:37rem;
+ padding:1rem 1rem 2rem 1rem;
+
+}
+
+.product{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ height:50%;
+}
+
+.product img{
+  max-width: 37rem;
+  max-height: 37rem;
+  width: 70%;
+}
+
+.product-price{
+  display: flex;
+}
+.product-price div,
+.product-price button
+{
+  text-align: center;
+  flex:1
+  
+}
+
+.product-price div{
+  font-size: 2.5rem;
+}
+
+.primary-button{
+  border: 0.1rem #c0c0c0 solid;
+  padding:1rem;
+  cursor:pointer;
+  
+}
+
+ .primary-button{
+  background-color: #f0c040;
+  color:black;
+  font-style: Montserrat;
+ 
+}
+
+ .primary-button :hover{
+  border: 0.1rem rgb(39, 38, 35);
+}
+
+.filter{
+  border-bottom: 0.1em #c0c0c0 solid;
+  display: flex;
+  padding:1rem;
+  margin: 1rem;
+  justify-content: center;
+}
+
+.filter div{
+  flex:1;
+}
+
+.cart-cart-header{
+  border-bottom: 0.1em #c0c0c0 solid;
+  display: flex;
+  margin: 1rem;
+  padding: 1.0rem;
+}
+
+.cart-items{
+  padding: 0;
+  list-style-type: none;
+  width:100%;
+}
+
+.cart-items li{
+  display: flex;
+}
+
+.cart-items li  img{
+  width:5rem;
+}
+
+.cart-items li div{
+ padding: 0.5rem; 
+}
+
+.cart-items li div:last-child{
+  flex:1;
+}
+
+.right{
+  text-align: left;
+  font-size: 20px;
+}
+
+.button{
+  font-size: 22px;
+  padding-left: 0.1rem;
+  
+}
+.Total{
+   display: flex;
+   width:100%;
+   justify-content: center;
+   align-items: center;
+}
+
+.Total  div {
+  flex: 1;
+}
+
+.Total button{
+  flex:1;
+}
+.pro-button{
+  font-size: 22px;
+  padding:1rem;
+  background-color: #f0c040;
+  color:black;
+}
+
+.pro-button:hover{
+  border: 0.1rem rgb(39, 38, 35) solid;
+}
+
+.form-container{
+  width:100%;
+  padding: 0;
+  list-style-type: none;
+}
+
+.form-container li{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+input{
+padding: 1rem;
+border: 0.1rem #c0c0c0 solid;
+width: 100%;
+}
+
+form{
+  width: 100%;
+}
+
+.product-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-height: 96vh;
+}
+
+.product-details img{
+  max-height: 100vh;
+  max-width: 46rem;
+
+}
+
+.product-detail-description{
+  margin: 1rem;
+  flex: 1 1;
+}
+
+.modal-button{
+  right: 1rem;
+  top: 2rem;
+  z-index: 1000;
+  position: absolute;
+  border-radius: 2px;
+}
+
+.order-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200%;
+  
+}
+
+
+.order-details li{
+  flex: 1;
+  justify-content: space-between;
+  list-style-type: none;
+  
+}
+
+
+
+
+.order-details li  div{
+  padding: 10px;
+}
+
+.success-message{
+  color: green;
+  position: relative;
+  
+  
+}
+
+.ok{
+  padding:1rem;
+  background-color: #f0c040;
+  color:black;
+  font-size: 22px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+
+}
+
+.ok:hover{
+  border: 0.1rem rgb(39, 38, 35) solid;
+}
+
+
+
+
+
+
+
